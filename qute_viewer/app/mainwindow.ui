@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="openAct"/>
+    <addaction name="separator"/>
+    <addaction name="exitAct"/>
+   </widget>
+   <widget class="QMenu" name="menu_View">
+    <property name="title">
+     <string>&amp;View</string>
+    </property>
+    <addaction name="zoomInAct"/>
+    <addaction name="zoomOutAct"/>
+    <addaction name="normalSizeAct"/>
+    <addaction name="separator"/>
+    <addaction name="fitToWindowAct"/>
+   </widget>
+   <widget class="QMenu" name="menuFi_lters">
+    <property name="title">
+     <string>Fi&amp;lters</string>
+    </property>
+    <addaction name="greyscaleAct"/>
+    <addaction name="negativeAct"/>
+    <addaction name="gradientAct"/>
+    <addaction name="separator"/>
+    <addaction name="hMirrorAct"/>
+    <addaction name="vMirrorAct"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="aboutAct"/>
+    <addaction name="aboutQtAct"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_View"/>
+   <addaction name="menuFi_lters"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="openAct">
+   <property name="text">
+    <string>&amp;Open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="exitAct">
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="zoomInAct">
+   <property name="text">
+    <string>Zoom &amp;In (25%)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl++</string>
+   </property>
+  </action>
+  <action name="zoomOutAct">
+   <property name="text">
+    <string>Zoom &amp;Out (25%)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+-</string>
+   </property>
+  </action>
+  <action name="normalSizeAct">
+   <property name="text">
+    <string>&amp;Normal size</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="fitToWindowAct">
+   <property name="text">
+    <string>&amp;Fit to window</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="greyscaleAct">
+   <property name="text">
+    <string>&amp;Greyscale</string>
+   </property>
+  </action>
+  <action name="negativeAct">
+   <property name="text">
+    <string>&amp;Negative</string>
+   </property>
+  </action>
+  <action name="gradientAct">
+   <property name="text">
+    <string>G&amp;radient</string>
+   </property>
+  </action>
+  <action name="hMirrorAct">
+   <property name="text">
+    <string>Mirror &amp;horizontally</string>
+   </property>
+  </action>
+  <action name="vMirrorAct">
+   <property name="text">
+    <string>Mirror &amp;vertically</string>
+   </property>
+  </action>
+  <action name="aboutAct">
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="aboutQtAct">
+   <property name="text">
+    <string>About &amp;Qt</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
